@@ -15,7 +15,7 @@ export upload_test=`echo ${results}|cut -f8 -d' '|tr -d '[[:space:]]'`
 
 export RESULT=`wget -qO- "https://api.thingspeak.com/update?key=${API_KEY}&field1=${ping_test}&field2=${download_test}&field3=${upload_test}"`
 
-echo "PING: ${ping_test}"
-echo "DOWN: ${download_test}"
-echo "UP  : ${upload_test}"
-echo "RESULT: ${RESULT}"
+#echo "PING: ${ping_test}"
+#echo "DOWN: ${download_test}"
+#echo "UP  : ${upload_test}"
+#echo "RESULT: ${RESULT}"
