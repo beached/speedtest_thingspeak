@@ -7,7 +7,7 @@ export results=`speedtest-cli --simple`
 #Download: 19.40 Mbit/s
 #Upload: 1.02 Mbit/s"
 
-echo ${results}
+#echo ${results}
 
 export ping_test=`echo ${results}|cut -f2 -d' '|tr -d '[[:space:]]'`
 export download_test=`echo ${results}|cut -f5 -d' '|tr -d '[[:space:]]'`
